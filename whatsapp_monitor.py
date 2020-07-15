@@ -33,7 +33,7 @@ sleep_param = int(interval_min) * 60
 #Calculation the counter 
 counter_param = int((int(duration) * 3600 ) / sleep_param)
 
-print(sleep_param,counter_param)
+
 counter = 1
 
 with open("status_timesheet.csv","w+",newline='') as csvfile:
@@ -43,7 +43,6 @@ with open("status_timesheet.csv","w+",newline='') as csvfile:
 	while True:
 		now = datetime.now()
 		dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-		print(name,dt_string,check_exists_by_xpath()[1])
 		writer.writerow({'name':name, 'time':dt_string,'status': check_exists_by_xpath()[1]})
 		time.sleep(sleep_param)
 		counter += 1
