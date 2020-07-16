@@ -1,10 +1,10 @@
 # whatsapp_scripts
-Scripts to monitor target's online status
+##Scripts to monitor target's online status
 
-Prerequisite :
+#####Prerequisite :
 
-1.Chrome browser.
-2.Python with packages - selenium.
+1. Chrome browser.
+2. Python with packages - selenium.
 
 
 Items included :
