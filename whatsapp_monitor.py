@@ -4,7 +4,7 @@ import time
 import sys
 from datetime import datetime,date
 import csv
-#staging
+#staging selected
 
 
 driver = webdriver.Chrome(r"chromedriver")
